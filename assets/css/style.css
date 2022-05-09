@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #18181B;
+    --primary-color-blue: #3575ff;
+}
+
+*{
+    font-family: sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+
+body {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 10px;
+   
+    
+}
+.container {
+    position: relative;
+    max-width: 1000px;       
+    padding: 15px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 8px;
+}
+
+.container-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    
+}
+
+.input-linha, .input-quadrante {
+    width: 80%;
+    padding: 10px;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+.linha, .quadrante {
+    text-align: center;
+}
+
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.btn {
+    font-size: 20px;
+    margin-top: 20px;
+    width: 30%;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    background-color: #18181B;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.container-zerar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bt {
+    margin-top: 20px;
+    width: 20%;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    background-color: #18181B;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+
+}
+
+.btn:hover, .bt:hover {
+    background-color: var(--primary-color-blue);
+    color: #000000;
+}
+
+h2 {
+    color: #FFFFFF;
+    
+}
+
+.footer {
+    text-align: center;
+    position: relative;
+    top: 20%;
+    
+}
+
+
+
+@media screen and (max-width: 740px){ 
+    .btn, .bt {
+        font-size: 15px;
+        
+    }
+
+    .btn {
+        width: 40%;
+    }
+
+    .input-linha, .input-quadrante {
+
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 565px){ 
+    .btn, .bt {
+        font-size: 15px;
+    }
+
+    @media screen and (max-width: 500px){ 
+        .btn, .bt {
+            font-size: 10px;
+        }
+
+
+    }
+
+    @media screen and (max-width: 390px){ 
+        .btn, .bt {
+            font-size: 8px;
+        }
+    
+    
+    
+    
+    }
+
+
+
+}
+
